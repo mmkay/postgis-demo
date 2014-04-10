@@ -33,3 +33,5 @@ SELECT 'Do two lines intersect?', st_Intersects(
     'LINESTRING(-10 0, 10 0)'::geometry, 
     'LINESTRING(0 -10, 0 10)'::geometry
 );
+
+-- all available functions - http://postgis.org/docs/reference.html#Spatial_Relationships_Measurements

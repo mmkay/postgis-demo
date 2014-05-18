@@ -18,7 +18,7 @@ SELECT 'Distance - 2 points', ST_Distance(
 
 -- should be 1
 SELECT 'Distance between point and a line', ST_Distance(
-    ST_GeomFromText('LINESTRING(1 0, 1 1)'),
+    ST_GeomFromText('LINESTRING(1 -1, 1 1)'),
     ST_GeomFromText('POINT(0 0)')
 );
 

@@ -34,7 +34,10 @@ SELECT ST_Area(ST_Intersection(
     (SELECT geom FROM geometries WHERE name = 'Wielokat')
 ));
 
--- TODO Join między geometries a impact_area
+-- Join pomiędzy figurami geometrycznymi i strefami zagrożenia
+-- Nie możemy joinować geometrycollection
 
-
-
+SELECT geometries.name, impact_area.name
+FROM geometries JOIN impact_area
+ON ST_Intersects(geometries.geom, impact_area.geom)
+WHERE geometries.name NOT LIKE 'Kolekcja%';

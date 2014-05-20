@@ -19,7 +19,7 @@ INSERT INTO geometries(name, geom) VALUES
     ('Punkt 1', 'POINT(0 0)'),
     ('Punkt 2', 'POINT(-2 -2)'),
     ('Punkt 3', 'POINT(-3 -3)'),
-    ('Punkt 4', 'POINT(214 12214)'),
+    ('Punkt 4', 'POINT(2 12)'),
     ('Zbior odcinkow', 'LINESTRING(0 0, 2 0, 2 2)'),
     ('Wielokat', 'POLYGON((0 0, 3 0, 3 1, 2 1, 2 2, 0 2, 0 0))'),
     ('Kolekcja elementow', 'GEOMETRYCOLLECTION(
